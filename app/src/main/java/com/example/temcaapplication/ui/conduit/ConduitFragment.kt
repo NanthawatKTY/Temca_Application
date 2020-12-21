@@ -1,4 +1,4 @@
-package com.example.temcaapplication.ui.home
+package com.example.temcaapplication.ui.conduit
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProvider
 import com.example.temcaapplication.R
 
-class HomeFragment : Fragment() {
+class ConduitFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var conduitViewModel: ConduitViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-                ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        conduitViewModel =
+                ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(ConduitViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_conduit, container, false)
+        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        conduitViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

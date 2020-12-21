@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Temca Application</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_power_cable">Power Cable</string>
+    <string name="title_conduit">Conduits</string>
 </resources>

@@ -3,23 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_power_cable">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.temcaapplication.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_power_cable"
+        android:name="com.example.temcaapplication.ui.power_cable.PowerCableFragment"
+        android:label="@string/title_power_cable"
+        tools:layout="@layout/fragment_power_cable" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.temcaapplication.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_conduit"
+        android:name="com.example.temcaapplication.ui.conduit.ConduitFragment"
+        android:label="@string/title_conduit"
+        tools:layout="@layout/fragment_conduit" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.temcaapplication.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+
 </navigation>
